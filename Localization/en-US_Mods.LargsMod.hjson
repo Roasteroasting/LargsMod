@@ -1,0 +1,49 @@
+DamageClasses.Largs.DisplayName: Largs damage
+
+Items: {
+	LargsTestSword: {
+		Tooltip: ""
+		DisplayName: Largs Test Sword
+	}
+
+	LargsTestSwordStatic: {
+		DisplayName: Largs Test Sword Static
+		Tooltip: ""
+	}
+
+	Blackpellet: {
+		Tooltip: ""
+		DisplayName: Blackpellet
+	}
+
+	WoodSlingshot: {
+		DisplayName: Wood Slingshot
+		Tooltip: ""
+	}
+
+	Thermite: {
+		DisplayName: Thermite
+		Tooltip: ""
+	}
+
+	Thermiload: {
+		DisplayName: Thermiload
+		Tooltip: ""
+	}
+}
+
+Configs: {
+	ClientConfig: {
+		DisplayName: Client Config
+
+		ShowMomentumBar: {
+			Label: Show Momentum Bar
+			Tooltip: ""
+		}
+	}
+}
+
+Projectiles: {
+	BlackpelletProjectile.DisplayName: Blackpellet Projectile
+	ThermiloadProjectile.DisplayName: Thermiload Projectile
+}

@@ -1,0 +1,7 @@
+The Largs Mod adds:
+
+- Largs damage class
+- Momentum-based damage scaling
+- Weapons
+- Armor sets
+- Accessories

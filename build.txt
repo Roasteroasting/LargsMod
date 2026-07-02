@@ -1,0 +1,3 @@
+displayName = Largs Mod
+author = Rusty
+version = 0.1
