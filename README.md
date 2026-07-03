@@ -18,7 +18,7 @@ Currently this mod is very early in development and very little actual content h
 
 
 
-\## Credits
+## Credits
 
 
 
