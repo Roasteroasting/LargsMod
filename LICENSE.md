@@ -1,12 +1,23 @@
 # License
 
-This project uses a dual-licensing model. The source code is open-source, while all custom visual, audio, and design assets remain strictly copyrighted.
 
----
+
+This project uses a dual-licensing structure:
+
+
+
+* Source code is licensed under the MIT License
+* All non-code assets (art, audio, and other media) are **all rights reserved unless otherwise stated**
+
+\---
 
 ## Source Code (MIT License)
 
+
+
 Copyright (c) 2026 Roasteroasting
+
+
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,18 +37,51 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
+\---
 
-## Media & Game Assets (All Rights Reserved & Third-Party Content)
+## Media \& Game Assets (All Rights Reserved)
 
-### Custom Mod Assets
-All rights reserved. This restriction applies strictly to original visual, audio, and design assets created by the author of this mod, including:
-* **Original Visuals:** Custom `.png` files, unique item/NPC sprites, and custom UI graphics created for this mod.
-* **Original Audio:** Custom `.wav`, `.mp3`, or `.ogg` sound effects and musical tracks created for this mod.
 
-**Permissions:** You may not redistribute, modify, or reuse these original assets in other projects without explicit written permission from the copyright holder.
 
-### Third-Party Assets & Disclaimers
-This repository contains assets that are property of third parties. The protections outlined above do not apply to them:
-* **Terraria Assets:** Any vanilla sprites, textures, audio, or lore elements included or referenced within this repository are the sole intellectual property of **Re-Logic**. Their presence here is for modding compatibility under Re-Logic's community guidelines and does not imply endorsement or ownership.
-* **tModLoader Assets:** Any API-specific code templates, UI assets, or resources belong to the **tModLoader Team** and are subject to the [tModLoader Terms of Service](https://store.steampowered.com/eula/1281930_eula_0).
+All original media assets in this repository remain the property of their respective creators.
+
+
+
+### Asset Contributors
+
+
+
+* Roasteroasting for original code, design implementation, and placeholder assets
+* Clyde for sprite artwork
+
+
+
+Unless explicitly stated, all custom visual and audio assets are:
+
+
+
+* not licensed for reuse
+* not licensed for redistribution
+* not licensed for modification in other projects
+
+
+
+You may use these assets only as part of playing this mod in Terraria via tModLoader.
+
+
+
+### Third-Party Content
+
+
+
+This repository includes or references content owned by third parties:
+
+
+
+* Terraria assets are the property of Re-Logic and are used under their modding guidelines
+* tModLoader is developed by the tModLoader team and used under its respective license terms
+
+
+
+This project does not claim ownership over any third-party assets.
+
