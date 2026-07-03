@@ -30,8 +30,8 @@ namespace LargsMod.Content.Items.Weapons
             Item.UseSound = SoundID.Item5;
             Item.autoReuse = true;
 
-            Item.shoot = ModContent.ProjectileType<Content.Projectiles.BlackpelletProjectile>();
-            Item.useAmmo = ModContent.ItemType<Blackpellet>();
+            Item.shoot = ProjectileID.PurificationPowder;
+            Item.useAmmo = ModContent.ItemType<PelletAmmo>();
             Item.shootSpeed = 8f;
 
             Item.value = Item.buyPrice(copper: 50);

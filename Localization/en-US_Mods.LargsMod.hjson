@@ -30,6 +30,16 @@ Items: {
 		DisplayName: Thermiload
 		Tooltip: ""
 	}
+
+	PelletAmmo: {
+		DisplayName: Pellet Ammo
+		Tooltip: ""
+	}
+
+	Firepellet: {
+		Tooltip: ""
+		DisplayName: Firepellet
+	}
 }
 
 Configs: {
@@ -46,4 +56,5 @@ Configs: {
 Projectiles: {
 	BlackpelletProjectile.DisplayName: Blackpellet Projectile
 	ThermiloadProjectile.DisplayName: Thermiload Projectile
+	FirepelletProjectile.DisplayName: Firepellet Projectile
 }

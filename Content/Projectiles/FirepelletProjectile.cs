@@ -7,7 +7,7 @@ using Terraria.Audio;
 
 namespace LargsMod.Content.Projectiles
 {
-    public class BlackpelletProjectile : ModProjectile
+    public class FirepelletProjectile : ModProjectile
     {
         public override void SetDefaults()
         {
@@ -32,6 +32,11 @@ namespace LargsMod.Content.Projectiles
             Projectile.rotation = Projectile.velocity.ToRotation();
 
             Projectile.velocity.Y += 0.15f;
+        }
+
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+        {
+            target.AddBuff(BuffID.OnFire, 180);
         }
 
         public override void OnKill(int timeLeft)
