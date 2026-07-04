@@ -2,17 +2,17 @@ DamageClasses.Largs.DisplayName: Largs damage
 
 Items: {
 	LargsTestSword: {
-		Tooltip: ""
+		Tooltip: You really aren't supposed to have this, you know
 		DisplayName: Largs Test Sword
 	}
 
 	LargsTestSwordStatic: {
 		DisplayName: Largs Test Sword Static
-		Tooltip: ""
+		Tooltip: You really aren't supposed to have this, you know
 	}
 
 	Blackpellet: {
-		Tooltip: ""
+		Tooltip: Dissolves in water
 		DisplayName: Blackpellet
 	}
 
@@ -33,12 +33,22 @@ Items: {
 
 	PelletAmmo: {
 		DisplayName: Pellet Ammo
-		Tooltip: ""
+		Tooltip: You really aren't supposed to have this, you know
 	}
 
 	Firepellet: {
-		Tooltip: ""
+		Tooltip: Dissolves in water
 		DisplayName: Firepellet
+	}
+
+	Steelpellet: {
+		Tooltip: ""
+		DisplayName: Steelpellet
+	}
+
+	Crystalpellet: {
+		DisplayName: Crystalpellet
+		Tooltip: Shatters on impact
 	}
 }
 
@@ -57,4 +67,6 @@ Projectiles: {
 	BlackpelletProjectile.DisplayName: Blackpellet Projectile
 	ThermiloadProjectile.DisplayName: Thermiload Projectile
 	FirepelletProjectile.DisplayName: Firepellet Projectile
+	SteelpelletProjectile.DisplayName: Steelpellet Projectile
+	CrystalpelletProjectile.DisplayName: Crystalpellet Projectile
 }

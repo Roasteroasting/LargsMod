@@ -14,7 +14,7 @@ namespace LargsMod.Content.Items.Weapons
 
         public override void SetDefaults()
         {
-            Item.damage = 8;
+            Item.damage = 4;
             Item.DamageType = ModContent.GetInstance<Largs>();
 
             Item.width = 32;

@@ -7,7 +7,7 @@ using Terraria.Audio;
 
 namespace LargsMod.Content.Projectiles
 {
-    public class BlackpelletProjectile : ModProjectile
+    public class SteelpelletProjectile : ModProjectile
     {
         public override void SetDefaults()
         {
@@ -29,29 +29,9 @@ namespace LargsMod.Content.Projectiles
 
         public override void AI()
         {
-            if (Projectile.wet)
-            {
-                SoundEngine.PlaySound(SoundID.Dig, Projectile.Center);
-
-                for (int i = 0; i < 8; i++)
-                {
-                    Dust.NewDust(
-                        Projectile.position,
-                        Projectile.width,
-                        Projectile.height,
-                        DustID.Ash,
-                        Projectile.velocity.X * 0.15f,
-                        Projectile.velocity.Y * 0.15f
-                    );
-                }
-
-                Projectile.Kill();
-                return;
-            }
-
             Projectile.rotation = Projectile.velocity.ToRotation();
 
-            Projectile.velocity.Y += 0.15f;
+            Projectile.velocity.Y += 0.20f;
         }
 
         public override void OnKill(int timeLeft)
@@ -64,7 +44,7 @@ namespace LargsMod.Content.Projectiles
                     Projectile.position,
                     Projectile.width,
                     Projectile.height,
-                    DustID.WoodFurniture,
+                    DustID.Stone,
                     Projectile.velocity.X * 0.2f,
                     Projectile.velocity.Y * 0.2f
                 );

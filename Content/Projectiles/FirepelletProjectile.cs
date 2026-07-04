@@ -9,6 +9,8 @@ namespace LargsMod.Content.Projectiles
 {
     public class FirepelletProjectile : ModProjectile
     {
+        private bool extinguished;
+
         public override void SetDefaults()
         {
             Projectile.width = 8;
@@ -29,6 +31,39 @@ namespace LargsMod.Content.Projectiles
 
         public override void AI()
         {
+            if (Projectile.wet)
+            {
+                SoundEngine.PlaySound(SoundID.LiquidsWaterLava, Projectile.Center);
+
+                for (int i = 0; i < 5; i++)
+                {
+                    Dust.NewDust(
+                        Projectile.position,
+                        Projectile.width,
+                        Projectile.height,
+                        DustID.Smoke,
+                        Projectile.velocity.X * 0.15f,
+                        Projectile.velocity.Y * 0.15f
+                    );
+                }
+
+                for (int i = 0; i < 5; i++)
+                {
+                    Dust.NewDust(
+                        Projectile.position,
+                        Projectile.width,
+                        Projectile.height,
+                        DustID.Ash,
+                        Projectile.velocity.X * 0.15f,
+                        Projectile.velocity.Y * 0.15f
+                    );
+                }
+
+                extinguished = true;
+                Projectile.Kill();
+                return;
+            }
+
             Projectile.rotation = Projectile.velocity.ToRotation();
 
             Projectile.velocity.Y += 0.15f;
@@ -41,6 +76,9 @@ namespace LargsMod.Content.Projectiles
 
         public override void OnKill(int timeLeft)
         {
+            if (extinguished)
+                return;
+
             SoundEngine.PlaySound(SoundID.Dig, Projectile.Center);
 
             for (int i = 0; i < 8; i++)

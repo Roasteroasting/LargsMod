@@ -29,6 +29,10 @@ namespace LargsMod.Content.Items.Ammo
             Item.rare = ItemRarityID.White;
         }
 
+        public override void SetStaticDefaults()
+        {
+        }
+
         public override void AddRecipes()
         {
             CreateRecipe(15)

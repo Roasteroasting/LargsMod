@@ -6,38 +6,34 @@ using LargsMod.Content.Projectiles;
 
 namespace LargsMod.Content.Items.Ammo
 {
-    public class Blackpellet : ModItem
+    public class Steelpellet : ModItem
     {
         public override void SetDefaults()
         {
             Item.width = 8;
             Item.height = 8;
 
-            Item.damage = 2;
+            Item.damage = 8;
             Item.DamageType = ModContent.GetInstance<Largs>();
 
-            Item.knockBack = 1f;
+            Item.knockBack = 1.5f;
 
             Item.maxStack = Item.CommonMaxStack;
             Item.consumable = true;
 
             Item.ammo = ModContent.ItemType<PelletAmmo>();
-            Item.shoot = ModContent.ProjectileType<BlackpelletProjectile>();
-            Item.shootSpeed = 8f;
+            Item.shoot = ModContent.ProjectileType<SteelpelletProjectile>();
+            Item.shootSpeed = 7.25f;
 
             Item.value = Item.buyPrice(copper: 1);
             Item.rare = ItemRarityID.White;
         }
 
-        public override void SetStaticDefaults()
-        {
-        }
-
         public override void AddRecipes()
         {
-            CreateRecipe(15)
-                .AddIngredient(ItemID.Wood)
-                .AddTile(TileID.Furnaces)
+            CreateRecipe(30)
+                .AddRecipeGroup("LargsMod:AnyIronBar")
+                .AddTile(TileID.Anvils)
                 .Register();
         }
     }
