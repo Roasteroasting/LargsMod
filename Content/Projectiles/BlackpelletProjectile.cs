@@ -7,7 +7,7 @@ using Terraria.Audio;
 
 namespace LargsMod.Content.Projectiles
 {
-    public class BlackpelletProjectile : ModProjectile
+    public class BlackpelletProjectile : BasePelletProjectile
     {
         public override void SetDefaults()
         {
@@ -29,6 +29,13 @@ namespace LargsMod.Content.Projectiles
 
         public override void AI()
         {
+            base.AI();
+
+            if (Projectile.velocity.LengthSquared() < 0.01f)
+            {
+                Projectile.velocity = new Vector2(0.1f * Projectile.direction, -0.1f);
+            }
+
             if (Projectile.wet)
             {
                 SoundEngine.PlaySound(SoundID.Dig, Projectile.Center);
@@ -46,12 +53,7 @@ namespace LargsMod.Content.Projectiles
                 }
 
                 Projectile.Kill();
-                return;
             }
-
-            Projectile.rotation = Projectile.velocity.ToRotation();
-
-            Projectile.velocity.Y += 0.15f;
         }
 
         public override void OnKill(int timeLeft)

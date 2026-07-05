@@ -7,8 +7,10 @@ using LargsMod.Content.DamageClasses;
 
 namespace LargsMod.Content.Projectiles
 {
-    public class CrystalpelletProjectile : ModProjectile
+    public class CrystalpelletProjectile : BasePelletProjectile
     {
+        protected override float Gravity => 0.10f;
+
         public override void SetDefaults()
         {
             Projectile.width = 8;
@@ -27,8 +29,7 @@ namespace LargsMod.Content.Projectiles
 
         public override void AI()
         {
-            Projectile.rotation = Projectile.velocity.ToRotation();
-            Projectile.velocity.Y += 0.10f;
+            base.AI();
         }
 
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)

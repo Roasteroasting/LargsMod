@@ -7,9 +7,11 @@ using Terraria.Audio;
 
 namespace LargsMod.Content.Projectiles
 {
-    public class FirepelletProjectile : ModProjectile
+    public class FirepelletProjectile : BasePelletProjectile
     {
         private bool extinguished;
+
+        protected override float Gravity => 0.15f;
 
         public override void SetDefaults()
         {
@@ -64,9 +66,7 @@ namespace LargsMod.Content.Projectiles
                 return;
             }
 
-            Projectile.rotation = Projectile.velocity.ToRotation();
-
-            Projectile.velocity.Y += 0.15f;
+            base.AI();
         }
 
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)

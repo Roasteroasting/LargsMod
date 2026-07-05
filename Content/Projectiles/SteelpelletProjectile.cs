@@ -7,8 +7,10 @@ using Terraria.Audio;
 
 namespace LargsMod.Content.Projectiles
 {
-    public class SteelpelletProjectile : ModProjectile
+    public class SteelpelletProjectile : BasePelletProjectile
     {
+        protected override float Gravity => 0.20f;
+
         public override void SetDefaults()
         {
             Projectile.width = 8;
@@ -29,9 +31,7 @@ namespace LargsMod.Content.Projectiles
 
         public override void AI()
         {
-            Projectile.rotation = Projectile.velocity.ToRotation();
-
-            Projectile.velocity.Y += 0.20f;
+            base.AI();
         }
 
         public override void OnKill(int timeLeft)

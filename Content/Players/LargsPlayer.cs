@@ -9,6 +9,8 @@ namespace LargsMod.Content.Players
 {
     public class LargsPlayer : ModPlayer
     {
+        public bool TargetingModuleEquipped;
+
         public float momentum;
         private int decayTimer;
         public int thermiloadCooldown;
@@ -19,6 +21,7 @@ namespace LargsMod.Content.Players
 
         public override void ResetEffects()
         {
+            TargetingModuleEquipped = false;
         }
 
         public override void PostUpdate()
