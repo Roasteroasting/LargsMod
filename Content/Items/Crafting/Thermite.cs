@@ -9,11 +9,11 @@ namespace LargsMod.Content.Items.Crafting
     {
         public override void SetDefaults()
         {
-            Item.width = 20;
-            Item.height = 20;
+            Item.width = 40;
+            Item.height = 40;
 
             Item.maxStack = Item.CommonMaxStack;
-            Item.consumable = true;
+            Item.consumable = false;
 
             Item.value = Item.buyPrice(silver: 1);
             Item.rare = ItemRarityID.Orange;
