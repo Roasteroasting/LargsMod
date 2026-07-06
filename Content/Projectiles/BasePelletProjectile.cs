@@ -33,37 +33,7 @@ namespace LargsMod.Content.Projectiles
 
             Projectile.velocity.Y += Gravity;
 
-            HandleTargeting();
-        }
-
-        protected virtual void HandleTargeting()
-        {
-            Player player = Main.player[Projectile.owner];
-
-            if (!player.active)
-                return;
-
-            if (!player.GetModPlayer<LargsPlayer>().TargetingModuleEquipped)
-                return;
-
-            NPC target = TargetingHelper.FindTarget(player, 600f);
-
-            if (target == null || !target.active || target.friendly)
-                return;
-
-            float speed = Projectile.velocity.Length();
-
-            if (speed < 6f)
-                speed = 6f;
-
-            Vector2 direction = target.Center - Projectile.Center;
-
-            if (direction.LengthSquared() < 0.001f)
-                return;
-
-            direction.Normalize();
-
-            Projectile.velocity = direction * speed;
+            HomingHelper.UpdateHoming(Projectile);
         }
     }
 }

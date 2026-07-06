@@ -31,11 +31,6 @@ namespace LargsMod.Content.Projectiles
         {
             base.AI();
 
-            if (Projectile.velocity.LengthSquared() < 0.01f)
-            {
-                Projectile.velocity = new Vector2(0.1f * Projectile.direction, -0.1f);
-            }
-
             if (Projectile.wet)
             {
                 SoundEngine.PlaySound(SoundID.Dig, Projectile.Center);

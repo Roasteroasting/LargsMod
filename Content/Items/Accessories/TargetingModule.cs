@@ -9,8 +9,8 @@ namespace LargsMod.Content.Items.Accessories
     {
         public override void SetDefaults()
         {
-            Item.width = 20;
-            Item.height = 20;
+            Item.width = 16;
+            Item.height = 16;
 
             Item.accessory = true;
 
