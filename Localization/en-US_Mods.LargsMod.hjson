@@ -23,7 +23,13 @@ Items: {
 
 	Thermite: {
 		DisplayName: Thermite
-		Tooltip: ""
+		Tooltip:
+			'''
+			'In World War II, the Germans had an artillery piece - it's the biggest in the world - called the Gustav gun, 
+			and it weighed a thousand tons. The Gustav was capable of firing a seven ton shell, and hitting a target *accurately* twenty-three miles away. 
+			I mean, you could drop bombs on it every day for a month without ever disabling it. But: drop a commando, one man, with just a bag of this? 
+			And he could melt right through four inches of solid steel and destroy that gun forever. So yes, I think it'll cut through any lock we're likely to find.'
+			'''
 	}
 
 	Thermiload: {
