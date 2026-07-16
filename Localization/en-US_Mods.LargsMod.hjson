@@ -61,6 +61,16 @@ Items: {
 		Tooltip: ""
 		DisplayName: Targeting Module
 	}
+
+	CopperSlingshot: {
+		Tooltip: ""
+		DisplayName: Copper Slingshot
+	}
+
+	TinSlingshot: {
+		DisplayName: Tin Slingshot
+		Tooltip: ""
+	}
 }
 
 Configs: {

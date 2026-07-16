@@ -20,7 +20,11 @@ namespace LargsMod.Content.Items.Accessories
 
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            player.GetModPlayer<LargsPlayer>().TargetingModuleEquipped = true;
+            var p = player.GetModPlayer<LargsPlayer>();
+            p.TargetingModuleEquipped = true;
+            // Reduce damage slightly when using the targeting module to balance built-in targeting.
+            // This keeps the damage penalty tied to the accessory itself, not the targeting system.
+            p.TargetingDamageMultiplier = 0.85f; // 15% damage reduction by default
         }
     }
 }

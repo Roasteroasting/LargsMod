@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
@@ -50,6 +51,14 @@ namespace LargsMod.Content.Items
             homing.CanHome =
                 HasBuiltInTargeting ||
                 player.GetModPlayer<LargsPlayer>().TargetingModuleEquipped;
+
+            // If the spawned projectile is a pellet (inherits BasePelletProjectile), apply the accessory's damage multiplier.
+            var p = Main.projectile[proj];
+            var playerData = player.GetModPlayer<LargsPlayer>();
+            if (playerData.TargetingDamageMultiplier != 1f && p.ModProjectile is BasePelletProjectile)
+            {
+                p.damage = Math.Max(1, (int)(p.damage * playerData.TargetingDamageMultiplier));
+            }
 
             return false;
         }

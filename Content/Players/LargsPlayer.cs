@@ -10,6 +10,7 @@ namespace LargsMod.Content.Players
     public class LargsPlayer : ModPlayer
     {
         public bool TargetingModuleEquipped;
+        public float TargetingDamageMultiplier = 1f;
 
         public float momentum;
         private int decayTimer;
@@ -22,6 +23,7 @@ namespace LargsMod.Content.Players
         public override void ResetEffects()
         {
             TargetingModuleEquipped = false;
+            TargetingDamageMultiplier = 1f;
         }
 
         public override void PostUpdate()
