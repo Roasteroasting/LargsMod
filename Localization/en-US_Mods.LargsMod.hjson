@@ -71,6 +71,66 @@ Items: {
 		DisplayName: Tin Slingshot
 		Tooltip: ""
 	}
+
+	CactusSlingshot: {
+		DisplayName: Cactus Slingshot
+		Tooltip: ""
+	}
+
+	Vertepellet: {
+		Tooltip: ""
+		DisplayName: Vertepellet
+	}
+
+	GoldSlingshot: {
+		DisplayName: Gold Slingshot
+		Tooltip: ""
+	}
+
+	IronSlingshot: {
+		DisplayName: Iron Slingshot
+		Tooltip: ""
+	}
+
+	LeadSlingshot: {
+		DisplayName: Lead Slingshot
+		Tooltip: ""
+	}
+
+	PlatinumSlingshot: {
+		DisplayName: Platinum Slingshot
+		Tooltip: ""
+	}
+
+	SilverSlingshot: {
+		DisplayName: Silver Slingshot
+		Tooltip: ""
+	}
+
+	TungstenSlingshot: {
+		DisplayName: Tungsten Slingshot
+		Tooltip: ""
+	}
+
+	Bloodshot: {
+		Tooltip: ""
+		DisplayName: Bloodshot
+	}
+
+	VileSpit: {
+		DisplayName: Vile Spit
+		Tooltip: ""
+	}
+
+	RotInflictor: {
+		DisplayName: Rot Inflictor
+		Tooltip: ""
+	}
+
+	MoltenSlingshot: {
+		DisplayName: Molten Slingshot
+		Tooltip: ""
+	}
 }
 
 Configs: {
@@ -90,4 +150,6 @@ Projectiles: {
 	FirepelletProjectile.DisplayName: Firepellet Projectile
 	SteelpelletProjectile.DisplayName: Steelpellet Projectile
 	CrystalpelletProjectile.DisplayName: Crystalpellet Projectile
+	VertepelletProjectile.DisplayName: Vertepellet Projectile
+	VileSpitProjectile.DisplayName: Vile Spit Projectile
 }

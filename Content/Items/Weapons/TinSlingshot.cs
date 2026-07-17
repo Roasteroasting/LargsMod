@@ -46,7 +46,7 @@ namespace LargsMod.Content.Items.Weapons
         public override void AddRecipes()
         {
             CreateRecipe()
-                .AddIngredient(ItemID.TinBar, 8)
+                .AddIngredient(ItemID.TinBar, 4)
                 .AddTile(TileID.Anvils)
                 .Register();
         }

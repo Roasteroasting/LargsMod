@@ -8,7 +8,7 @@ using Microsoft.Xna.Framework;
 
 namespace LargsMod.Content.Items.Weapons
 {
-    public class CopperSlingshot : LargsWeapon
+    public class CactusSlingshot : LargsWeapon
     {
         public override LargsWeaponType WeaponType => LargsWeaponType.Static;
 
@@ -19,18 +19,18 @@ namespace LargsMod.Content.Items.Weapons
 
         public override void SetDefaults()
         {
-            Item.damage = 3;
+            Item.damage = 4;
             Item.DamageType = ModContent.GetInstance<Largs>();
 
             Item.width = 32;
             Item.height = 32;
 
-            Item.useTime = 22;
-            Item.useAnimation = 22;
+            Item.useTime = 28;
+            Item.useAnimation = 28;
             Item.useStyle = ItemUseStyleID.Shoot;
 
             Item.noMelee = true;
-            Item.knockBack = 2.2f;
+            Item.knockBack = 2.1f;
 
             Item.UseSound = SoundID.Item5;
             Item.autoReuse = false;
@@ -39,15 +39,15 @@ namespace LargsMod.Content.Items.Weapons
             Item.useAmmo = ModContent.ItemType<PelletAmmo>();
             Item.shootSpeed = 8f;
 
-            Item.value = Item.buyPrice(copper: 80);
+            Item.value = Item.buyPrice(copper: 50);
             Item.rare = ItemRarityID.White;
         }
 
         public override void AddRecipes()
         {
             CreateRecipe()
-                .AddIngredient(ItemID.CopperBar, 4)
-                .AddTile(TileID.Anvils)
+                .AddIngredient(ItemID.Cactus, 5)
+                .AddTile(TileID.WorkBenches)
                 .Register();
         }
     }
