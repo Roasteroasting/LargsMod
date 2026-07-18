@@ -23,6 +23,14 @@ namespace LargsMod.Content.Systems
             );
 
             RecipeGroup.RegisterGroup("LargsMod:AnyCopperBar", copperGroup);
+
+            RecipeGroup adamantiteGroup = new RecipeGroup(
+                () => "Any Adamantite Bar",
+                ItemID.AdamantiteBar,
+                ItemID.TitaniumBar
+            );
+
+            RecipeGroup.RegisterGroup("LargsMod:AnyAdamantiteBar", adamantiteGroup);
         }
     }
 }

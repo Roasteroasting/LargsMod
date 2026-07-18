@@ -131,6 +131,11 @@ Items: {
 		DisplayName: Molten Slingshot
 		Tooltip: ""
 	}
+
+	ElectricRailcannon: {
+		Tooltip: ""
+		DisplayName: Electric Railcannon
+	}
 }
 
 Configs: {
@@ -152,4 +157,5 @@ Projectiles: {
 	CrystalpelletProjectile.DisplayName: Crystalpellet Projectile
 	VertepelletProjectile.DisplayName: Vertepellet Projectile
 	VileSpitProjectile.DisplayName: Vile Spit Projectile
+	ElectricRailcannonProjectile.DisplayName: Electric Railcannon Projectile
 }

@@ -15,6 +15,7 @@ namespace LargsMod.Content.Players
         public float momentum;
         private int decayTimer;
         public int thermiloadCooldown;
+        public int electricRailcannonCooldown;
 
         private const float GainRate = 0.25f;
         private const float DecayRate = 0.5f;
@@ -42,6 +43,11 @@ namespace LargsMod.Content.Players
             if (thermiloadCooldown > 0)
             {
                 thermiloadCooldown--;
+            }
+
+            if (electricRailcannonCooldown > 0)
+            {
+                electricRailcannonCooldown--;
             }
 
             if (!isGrappling && hasInput && isMoving)
