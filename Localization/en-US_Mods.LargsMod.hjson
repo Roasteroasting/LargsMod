@@ -2,13 +2,13 @@ DamageClasses.Largs.DisplayName: Largs damage
 
 Items: {
 	LargsTestSword: {
-		Tooltip: You really aren't supposed to have this, you know
+		Tooltip: "'You really aren't supposed to have this, you know'"
 		DisplayName: Largs Test Sword
 	}
 
 	LargsTestSwordStatic: {
 		DisplayName: Largs Test Sword Static
-		Tooltip: You really aren't supposed to have this, you know
+		Tooltip: "'You really aren't supposed to have this, you know'"
 	}
 
 	Blackpellet: {
@@ -39,7 +39,7 @@ Items: {
 
 	PelletAmmo: {
 		DisplayName: Pellet Ammo
-		Tooltip: You really aren't supposed to have this, you know
+		Tooltip: "'You really aren't supposed to have this, you know'"
 	}
 
 	Firepellet: {
@@ -48,7 +48,7 @@ Items: {
 	}
 
 	Steelpellet: {
-		Tooltip: ""
+		Tooltip: "'Pting!'"
 		DisplayName: Steelpellet
 	}
 
@@ -78,7 +78,7 @@ Items: {
 	}
 
 	Vertepellet: {
-		Tooltip: ""
+		Tooltip: "'Grow a spine, would you?'"
 		DisplayName: Vertepellet
 	}
 
@@ -133,7 +133,7 @@ Items: {
 	}
 
 	ElectricRailcannon: {
-		Tooltip: ""
+		Tooltip: Great for ultrakilling enemies
 		DisplayName: Electric Railcannon
 	}
 }
@@ -144,7 +144,7 @@ Configs: {
 
 		ShowMomentumBar: {
 			Label: Show Momentum Bar
-			Tooltip: ""
+			Tooltip: "'Well, I don't know why the hell you'd want to turn it off, but here you go'"
 		}
 	}
 }

@@ -7,3 +7,4 @@ obj/
 .vscode/
 .DS_Store
 Thumbs.db
+.github/copilot-instructions.md

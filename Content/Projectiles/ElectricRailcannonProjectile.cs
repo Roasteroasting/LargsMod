@@ -52,7 +52,7 @@ namespace LargsMod.Content.Projectiles
                     if (tile != null)
                     {
                         // Liquid detection: LiquidAmount > 0 and LiquidType == 0 (water)
-                        if (tile.LiquidAmount > 0 && tile.LiquidType == 0)
+                        if (tile.LiquidAmount > 0 && tile.LiquidType == LiquidID.Water)
                         {
                             foundWater = true;
                         }
