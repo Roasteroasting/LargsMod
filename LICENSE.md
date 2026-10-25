@@ -15,7 +15,7 @@ This project uses a dual-licensing structure:
 
 
 
-Copyright (c) 2026 Roasteroasting
+Copyright (c) 2026 Mark Arnold
 
 
 
@@ -51,7 +51,7 @@ All original media assets in this repository remain the property of their respec
 
 
 
-* Roasteroasting for original code, design implementation, and placeholder assets
+* Mark Arnold for original code, design implementation, and placeholder assets
 * Clyde for sprite artwork
 
 
